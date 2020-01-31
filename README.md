@@ -1,21 +1,29 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 3: Web APIs & NLP
+In the tables below, "h-opt" refers to hyperparameter optimization via RandomizedSearchCV.
+## CountVectorizer models
 
-### Description
+| Model        |Training time (s)| Train Accuracy           | Test Accuracy  |`/r/theonion` corpus accuracy|`/r/nottheonion` corpus accuracy|
+|:-------------|---:|-------------:| -----:|------:|------:|
+| LogReg                 | 43|.984|.800|.791|.805|
+| ...with h-opt          | 15|.969|.801|.793|.805|
+| MultinomNB             | .1|.954|.812|.811|.806|
+| ...with h-opt          | 10|.944|.812|.805|.803|
+| ComplementNB           | .1|.954|.812|.810|.807|
+| ...with h-opt          | 11|.955|.812|.800|.799|
+| BernoulliNB            | .1|.955|.813|.801|.816|
+| ...with h-opt          | 11|.962|.810|.795|.811|
 
-In week four we've learned about a few different classifiers. In week five we'll learn about webscraping, APIs, and Natural Language Processing (NLP). This project will put those skills to the test.
+## Tf-idf models
 
-For project 3, your goal is two-fold:
-1. Using [Pushshift's](https://github.com/pushshift/api) API, you'll collect posts from two subreddits of your choosing.
-2. You'll then use NLP to train a classifier on which subreddit a given post came from. This is a binary classification problem.
-
-
-#### About the API
-
-Pushshift's API is fairly straightforward. For example, if I want the posts from [`/r/boardgames`](https://www.reddit.com/r/boardgames), all I have to do is use the following url: https://api.pushshift.io/reddit/search/submission?subreddit=boardgames
-
-To help you get started, we have a primer video on how to use the API: https://youtu.be/eGi8jf1wHgw
-
----
+| Model        |Training time (s)| Train Accuracy           | Test Accuracy  |`/r/theonion` corpus accuracy|`/r/nottheonion` corpus accuracy|
+|:-------------|---:|-------------:| -----:|------:|------:|
+| LogReg                 | 43|.984|.800|.791|.805|
+| ...with h-opt          | 15|.969|.801|.793|.805|
+| MultinomNB             | .1|.954|.812|.811|.806|
+| ...with h-opt          | 10|.944|.812|.805|.803|
+| ComplementNB           | .1|.954|.812|.810|.807|
+| ...with h-opt          | 11|.955|.812|.800|.799|
+| BernoulliNB            | .1|.955|.813|.801|.816|
+| ...with h-opt          | 11|.962|.810|.795|.811|
 
 ### Requirements
 
