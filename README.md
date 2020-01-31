@@ -16,14 +16,14 @@ In the tables below, "h-opt" refers to hyperparameter optimization via Randomize
 
 | Model        |Training time (s)| Train Accuracy           | Test Accuracy  |`/r/theonion` corpus accuracy|`/r/nottheonion` corpus accuracy|
 |:-------------|---:|-------------:| -----:|------:|------:|
-| LogReg                 | 43|.984|.800|.791|.805|
-| ...with h-opt          | 15|.969|.801|.793|.805|
-| MultinomNB             | .1|.954|.812|.811|.806|
-| ...with h-opt          | 10|.944|.812|.805|.803|
-| ComplementNB           | .1|.954|.812|.810|.807|
-| ...with h-opt          | 11|.955|.812|.800|.799|
-| BernoulliNB            | .1|.955|.813|.801|.816|
-| ...with h-opt          | 11|.962|.810|.795|.811|
+| LogReg                 | 26|.976|.799|.810|.795|
+| ...with h-opt          | 13|.913|.783|.797|.783|
+| MultinomNB             | .1|.955|.805|.826|.792|
+| ...with h-opt          | 11|.999|.819|.824|.789|
+| ComplementNB           | .1|.955|.807|.823|.797|
+| ...with h-opt          | 11|.940|.815|.812|.799|
+| BernoulliNB            | .1|.956|.807|.813|.812|
+| ...with h-opt          | 11|.904|.806|.781|.815|
 
 ### Requirements
 
