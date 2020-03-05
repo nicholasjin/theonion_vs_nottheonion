@@ -87,6 +87,4 @@ of posts.
 that I included that time.
 
 ## Future Work
-Word embeddings are frequently employed for text classification tasks. Unfortunately,
-we were unable to get an implementation working in a timely fashion! The `spaCy` library
-is extremely powerful and extremely efficient.
+Word embeddings are frequently employed for text classification tasks. We would be interested in using a word vector embedding to refine a future model. 
